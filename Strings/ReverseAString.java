@@ -1,8 +1,6 @@
 package Strings;
 
 import java.io.*;
-import java.util.*;
-import java.math.*;
 
 
 public class ReverseAString {
@@ -21,10 +19,10 @@ public class ReverseAString {
 
 class Solution{
     public String reverseString(String s) {
-        String reversed = "";
+        StringBuilder reversed = new StringBuilder();
         for(int i = s.length()-1; i >= 0; i--){
-            reversed += s.charAt(i);
+            reversed.append(s.charAt(i));
         }
-        return reversed;
+        return reversed.toString();
     }
 }
